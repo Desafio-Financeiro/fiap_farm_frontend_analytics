@@ -7,5 +7,8 @@ export default defineConfig({
   plugins: [pluginReact(), pluginModuleFederation(moduleFederationConfig)],
   server: {
     port: 3003,
+    cors: {
+      origin: "*",
+    },
   },
 });
